@@ -1,20 +1,22 @@
+package triangle;
+
 public class Triangle
 {
-    static public void triangleOne()
+    public static void triangleOne()
     {
-        for(int i = 1;i < 6;i++)
+        for(int i = 0;i < 5;i++)
         {
             for(int k = 1;k <= i;k++)
             {
                 System.out.print("*");
             }
             
-            System.out.print("\n");
+            System.out.println();
             
         }
     }
 
-    static public void triangleTwo()
+    public static void triangleTwo()
     {
         for(int i = 0;i < 5;i++)
         {
@@ -23,15 +25,14 @@ public class Triangle
                 System.out.print("*");
             }
 
-            System.out.print("\n");
+            System.out.println();
             
         }
     }
 
     
-    static public void triangleThree()
+    public static void triangleThree()
     {
-        int g = 1;
 
         for(int i = 1;i <= 5;i++)
         {
@@ -40,23 +41,23 @@ public class Triangle
                 System.out.print(" ");
             }
 
-            for(int j = 1;j <= g;j++)
+            for(int j = 1;j <= ((2 * i) - 1);j++)
             {
                 System.out.print("*");
             }
-            g = g + 2;
 
-            System.out.print("\n");
+            System.out.println();
             
         }
     }
     public static void main(String[] args) 
     {
         triangleOne();
-        System.out.print("\n");
+        System.out.println();
         triangleTwo();
-        System.out.print("\n");
+        System.out.println();
         triangleThree();
+        
 
     }
 }
